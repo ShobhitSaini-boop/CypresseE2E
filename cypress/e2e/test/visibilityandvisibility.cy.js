@@ -2,7 +2,8 @@ describe("Visibilty", function(){
 
 
     it ("Visibilty of text box", ()=>
-{cy.visit('https://www.rahulshettyacademy.com/AutomationPractice/')
+{
+    cy.visit('https://www.rahulshettyacademy.com/AutomationPractice/')
 cy.get('#displayed-text').should('be.visible')
 cy.get('#hide-textbox').click()
 cy.get('#displayed-text').should('not.be.visible')
