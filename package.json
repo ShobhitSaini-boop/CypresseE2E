@@ -1,0 +1,18 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "For practice purpose",
+  "main": "index.js",
+  "scripts": {
+    "test:addToCart": "npx cypress run --spec cypress/e2e/tests/addToCartTest.cy.js"
+  },
+  "author": "Shobhit",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.7.2"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
