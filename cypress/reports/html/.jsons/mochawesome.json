@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-04-10T12:02:01.575Z",
+    "end": "2024-04-10T12:02:36.875Z",
+    "duration": 35300,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "88384821-5c89-4d29-a75f-641f2c7153d7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\test\\Test2.cy.js",
+      "file": "cypress\\e2e\\test\\Test2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bc251693-9b87-4334-99a8-43ebe931c547",
+          "title": "My first test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test Positive ",
+              "fullTitle": "My first test case test Positive ",
+              "timedOut": null,
+              "duration": 23041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.title().should(\"eq\", \"OrangeHRM\");",
+              "err": {},
+              "uuid": "087631ca-fa6d-4ac5-8ba7-1f42e5868768",
+              "parentUUID": "bc251693-9b87-4334-99a8-43ebe931c547",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test Negative",
+              "fullTitle": "My first test case test Negative",
+              "timedOut": null,
+              "duration": 5247,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\Test2.cy.js\\\\My first test case -- test Negative (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.visit(\"https://opensource-demo.orangehrmlive.com/web/index.php/auth/login\");\ncy.title().should(\"eq\", \"OrangeHwRM\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected 'OrangeHRM' to equal 'OrangeHwRM'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected 'OrangeHRM' to equal 'OrangeHwRM'\n    at Context.eval (webpack://cypress/./cypress/e2e/test/Test2.cy.js:12:19)",
+                "diff": "- 'OrangeHRM'\n+ 'OrangeHwRM'\n"
+              },
+              "uuid": "ea3b9618-83ff-40ca-a8d4-2e687148ce57",
+              "parentUUID": "bc251693-9b87-4334-99a8-43ebe931c547",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "087631ca-fa6d-4ac5-8ba7-1f42e5868768"
+          ],
+          "failures": [
+            "ea3b9618-83ff-40ca-a8d4-2e687148ce57"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28288,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
